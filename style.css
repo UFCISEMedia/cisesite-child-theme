@@ -1,0 +1,465 @@
+/*!
+Theme Name: UF HWCOE 2018 Child
+Theme URI: https://www.eng.ufl.edu/about-this-site/
+Description: Child theme for UF HWCOE
+Author: HWCOE MARCOM
+Author URI: https://www.eng.ufl.edu/
+Template: hwcoe-ufl
+Version: 1.0.0-beta
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*Home Page Styles
+.widget-post-thumbnail {
+	width: 150px; 
+	height:150px;
+	float: left;
+	margin-right: 20px;
+}*/
+
+/*Twitter Block on Homepage*/
+.tweet-block {
+	background: #00529b url(https://test.cise.ufl.edu/wp-content/themes/hwcoe-ufl/img/bg-big-stat.png) no-repeat center center !important;
+	background-size: cover !important;
+}
+
+/*CISE Text Formatting*/
+.cise-inline-div {
+	margin-bottom: 40px;
+}
+
+/*Sidenav*/
+.sidenav a {
+	color: #C65006;
+}
+.sidenav .current_page_item a  {
+	text-decoration: underline;
+	background: #C65006;
+	color: #fff;
+}
+.sidenav .current_page_item .children a {
+	text-decoration: none;
+	background: none;
+	color: #C65006;
+}
+.sidenav, .sidenav .current_page_item, .sidenav .children, .sidenav .current_page_item .children {
+	background: none;
+}
+.sidenav a:hover {
+	color: #fff !important;
+	background: #C65006 !important;
+}
+
+/*Archive Dropdown*/
+.widget_archive select, .widget_categories select {
+	color: #000;
+}
+
+/*Research Pages Styles*/
+.shaded_block_text {
+	background-color: #3E7198;
+	color: #FFF; 
+	margin-bottom: 20px;
+	padding: 50px 40px 40px
+}
+.shaded_block_text h3 {
+	margin-bottom: 15px;
+}
+.shaded_block_text h3 a {
+	color: #a9dcda;
+}
+.shaded_block_text h3 a:hover {
+	color: #fff;
+}
+.shaded_block_text p {
+	margin-bottom: 15px;
+}
+.shaded_block_text p a {
+	color: #a9dcda;
+	font-weight: 100;
+}
+.shaded_block_text p a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+.shaded_block_text ol li {
+	text-transform: none;
+}
+
+/*Academics Pages - Undergrad/Graduate*/
+.df-image-cards-container {
+}
+.df-img-cards {
+	width:32%;
+	margin: 0 10px 20px 0;
+	float: left;
+}
+.df-img-cards h2 {
+	font-size: 20px;
+}
+.df-img-cards:nth-child(3) {
+	margin-right: 0;
+}
+
+/*Faculty Page Styles*/
+/*Removes post meata data*/
+.post-template-single-post-faculty .widget-area, .post-template-single-post-faculty .entry-meta { 
+	display:none;
+}
+.faculty_details h1 { 
+	font-size: 30px; 
+	margin: 40px 0 0;
+	line-height: 43px;
+}
+.faculty_details h3 { 
+	margin: 0;
+}
+.faculty_details h4 { 
+	margin: 0;
+	font-size: 22px;
+}
+.faculty_details ul li::before { 
+	display: none;
+}
+.faculty_details ul li, .faculty_details ol li { 
+	text-transform: none;
+}
+
+/*Faculty Contact Information Styles*/
+.faculty_contact_information h3 { 
+	margin-bottom: 10px;
+}
+.faculty_contact_information p {
+	margin: 0px;
+}
+
+/*Accordion Styles*/
+.ui-widget-content a {
+color: #a9dcda !important;
+}
+.ui-widget-content h3 {
+margin: 0;
+}
+
+/*Table Styles*/
+.tablepress thead th {
+	background-color: #3E7198 !important;
+	color: #fff;
+}
+#tablepress-7 tbody td.column-2 { 
+	vertical-align: middle;
+}
+#tablepress-7 td, #tablepress-17 td {
+	background-color: transparent;
+}
+#tablepress-16 {
+	background: #084b81;
+}
+#tablepress-16 h3 {
+	color: #f37021;
+	font-weight: 700;
+	font-size: 84px;
+	font-family: "gentona","Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-align: center;
+	margin: 0;
+	padding: 20px 15px 10px;
+	text-shadow: 3px 3px 1px #fff;
+}
+#tablepress-16 td {
+	color: #fef2d2;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: "gentona","Helvetica Neue",Helvetica,Arial,sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 20px;
+	border: none;
+	padding: 7.5px 15px 20px;
+	background-color: #084b81;
+}
+#tablepress-16 td.column-1 {
+	border-right: 4px solid #fef2d2;
+}
+#tablepress-16 tr.row-2 {
+	border-bottom: 4px solid #fef2d2;
+}
+
+/*Syllabi Tables Styles*/
+#syllabi-table_wrapper.dataTables_wrapper .dataTables_filter {
+	margin-bottom: 10px;
+}
+
+#syllabi-table_wrapper.dataTables_wrapper .dataTables_info {
+	float: left !important;
+}
+
+#syllabi-table_wrapper.dataTables_wrapper .dataTables_paginate .paginate_button {
+	color: #bc581a !important;
+	border: none;
+	background-color: transparent;
+	background: transparent;
+}
+
+#syllabi-table_wrapper.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, #syllabi-table_wrapper.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, #syllabi-table_wrapper.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+	color: #666 !important;
+	text-decoration: none !important;
+}
+
+#syllabi-table_wrapper.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+	color: #e47e3e !important;
+	text-decoration: underline !important;
+	border: none;
+	background-color: transparent;
+	background: transparent;
+}
+
+/*News & Event Pages Styles*/
+#wpsp-5007 .wp-show-posts-entry-summary p {
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+#wpsp_widget-3, #em_widget-3, #smartcountdown-2, #smartcountdown-5, #wpsp_widget-5 {
+	margin-bottom: 0;
+}
+
+/*Newsletter Pages Styles*/
+#wpsp-3025 .wp-show-posts-entry-summary p {
+	text-align: center;
+}
+
+.post-template-single-post-newsletter h3 {
+	color: #bc581a;
+	margin-bottom: 15px;
+}
+
+.nl_header h3 {
+	margin: 0;
+}
+
+.newsletter_details h3 {
+	margin-bottom: 0px;
+}
+
+.newsletter_details h2 {
+	clear: both;
+	padding-top: 20px;
+}
+
+.nl-featured-story {
+	width: 47%;
+	float: left;
+	margin-right: 30px
+}
+
+.nl-featured-story h3 {
+	margin-bottom: 40px;
+}
+
+.nl-featured-story img {
+	margin: 0 auto 10px;
+	width: 100%;
+}
+
+.nl-featured-story:nth-child(3) { 
+	margin-right: 0;
+}
+
+.nl-faculty-story img, .nl-events-story img, .nl-students-story img, .nl-digital-story img {
+	float: left;
+	padding: 0 20px 20px 0;
+}
+
+.nl-digital-story img {
+	max-width: 252px;
+}
+
+.nl-faculty-story, .nl-events-story, .nl-students-story, .nl-digital-story {
+	clear: both;
+	margin: 0 0 20px;
+	position: relative;
+}
+
+/*Events Page Styles*/
+.events-table img {
+	margin: 0 15px 20px 0;
+}
+
+.entry-content .events-table tr:nth-child(odd) td, .entry-content .events-table tr:nth-child(even) td {
+	background-color: transparent;
+	border: none;
+}
+
+/*Issuu PDF Viewer*/
+.embed-wrapper {
+	height: 900px;
+}
+
+/*Photo Gallery Styles*/
+bwg_container { 
+	margin: 0 !important;
+}
+
+#bwg_container1_0 #bwg_container2_0 .bwg_slideshow_dots_0 {
+	background: #E47426 !important;
+}
+
+#bwg_container1_0 #bwg_container2_0 .bwg_slideshow_dots_active_0 {
+	background: #FFFFFF !important;
+	border: 1px solid #FFFFFF !important;
+}
+
+#bwg_container1_0 #bwg_container2_0 #spider_slideshow_left-ico_0, #bwg_container1_0 #bwg_container2_0 #spider_slideshow_right-ico_0 {
+	background-color: #00529b !important;
+}
+
+#bwg_container1_0 #bwg_container2_0 .bwg_slideshow_image_wrap_0 {
+	background-color: rgba(0,0,0,0) !important;
+}
+
+#bwg_container1_0 #bwg_container2_0 .bwg_slideshow_dots_container_0 {
+	bottom: -30px !important;
+}
+
+/*Footer*/
+.footer-menu a {
+	color: #c65006;
+}
+
+/*
+@media (max-width: 435px) {
+/*Issuu PDF Viewer
+	.embed-wrapper {
+		height: 500px;
+	}
+}
+
+@media (max-width: 530px) and (min-width: 436px) {
+/*Issuu PDF Viewer
+	.embed-wrapper {
+		height: 700px;
+	}
+}
+
+@media (max-width: 570px) and (min-width: 531px) {
+/*Issuu PDF Viewer
+	.embed-wrapper {
+		height: 800px;
+	}
+}*/
+
+@media (max-width: 991px) and (min-width: 980px) {
+/*Homepage*/
+	.secondary-featured-block {
+		background-image: none;
+	}
+	.homepage-secondary-featured-wrap .secondary-featured-block.three {
+		margin-top: 0px;
+	}
+}
+
+@media (max-width: 992px) and (min-width: 992px) {
+	.secondary-featured-block.three {
+		background-image: none;
+	}
+}
+
+@media (max-width: 1601px) and (min-width: 1522px) {
+/*Navigation Styles*/
+	.header-type-text .header.unit .main-menu-wrap .main-menu-link {
+		padding: 12px 40px;
+	}
+}
+
+@media (max-width: 1521px) and (min-width: 1442px) {
+/*Navigation Styles*/
+	.header-type-text .header.unit .main-menu-wrap .main-menu-link {
+		padding: 12px 35px;
+	}
+}
+
+@media (max-width: 1441px) and (min-width: 1362px) {
+/*Navigation Styles*/
+	.header-type-text .header.unit .main-menu-wrap .main-menu-link {
+		padding: 12px 30px;
+	}
+}
+
+@media (max-width: 1361px) and (min-width: 1282px) {
+/*Navigation Styles*/
+	.header-type-text .header.unit .main-menu-wrap .main-menu-link {
+		padding: 12px 25px;
+	}
+}
+
+@media (max-width: 1281px) and (min-width: 1220px){
+/*Navigation Styles*/
+	.header-type-text .header.unit .main-menu-wrap .main-menu-link {
+		padding: 12px 20px;
+	}
+}
+
+@media (max-width: 1219px) and (min-width: 1105px){
+/*Navigation Styles*/
+	.main-menu-wrap .main-menu-link {
+		font-size: 14px !important;
+	}
+}
+
+@media (max-width: 1104px) and (min-width: 992px){
+/*Navigation Styles*/
+	.header-type-text .header.unit .main-menu-wrap .main-menu-link {
+		padding: 37px 15px;
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 768px) {
+	/*Sidenav*/
+	.btn-mobile-toggle a {
+		color: #fff;
+	}
+}
+
+@media (max-width: 767px) {
+	#syllabi-table_wrapper.dataTables_wrapper .dataTables_info {
+		float: none !important;
+	}
+}
+
+@media (max-width: 594px) {
+	.table-wrapper {
+		overflow-x: scroll;
+	}
+}
+
+@media (max-width: 560px) {
+/*Graduate Academics Page*/
+	.df-img-cards {
+		width:100%;
+		margin: 0 0 20px 0;
+		float: none;
+	}
+	
+/*Newsletter Pages Styles*/
+	.newsletter_details h2 {
+		text-align: center;
+	}
+	.nl-featured-story {
+		width: 100%;
+		margin-right: 0;
+	}
+	.nl-faculty-story img, .nl-events-story img, .nl-students-story img, .nl-digital-story img {
+		float: none;
+		margin: auto;
+		padding: 0 0 20px 0;
+		width: 100%;
+		max-width: 100%;
+	}
+	.nl-faculty-story, .nl-events-story, .nl-students-story, .nl-digital-story {
+		height: auto;
+	}	
+}

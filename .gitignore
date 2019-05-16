@@ -1,0 +1,60 @@
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts and OS files
+*.lnk
+
+# Sass
+.sass-cache
+*.scssc
+sass/template.scss
+
+#Wordpress
+*.log
+.htaccess
+sitemap.xml
+sitemap.xml.gz
+wp-config.php
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/themes/twenty*/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/wp-cache-config.php
+/readme.html
+/license.txt
+
+# OS generated files 
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+#misc
+.svn*
+_notes
+*.orig
+/fonts
+node_modules
+.npm-debug.log
+tmp
+*.bak
+cgi-bin/
+sftp-config.json
+phpinfo.php
+*sublime*
