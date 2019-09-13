@@ -8,7 +8,7 @@ jQuery(function($) {
 	$('#syllabi-table').DataTable( {
         "dom": 'lf<"table-wrapper"t>ip',
 		//responsive: true,
-		"pageLength": 100
+		"pageLength": 50
 	});
 	
 });
