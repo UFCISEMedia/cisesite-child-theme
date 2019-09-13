@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: HWCOE Syllabi Display
-Description: This plugin allows admin to display a dynamic table of entries using the Syllabus Upload custom_post_type. Use this shortcode to display the table: <strong>[syllabi_table]</strong>.
+Description: This plugin allows admin to display a dynamic table of entries using the Syllabus Upload custom_post_type. Use this shortcode to display the table: <strong>[syllabi-table]</strong>.
 Requirements: Advanced Custom Fields with the Student Registration Modules field group; hwcoe-ufl-child theme with career fair modifications; Optional: Gravity Forms with 
 Version: 1.0
 Author: Allison Logan
@@ -156,4 +156,4 @@ function syllabi_table_shortcode() {
 	return $output;
 }
 
-add_shortcode('syllabi_table', 'syllabi_table_shortcode'); 
+add_shortcode('syllabi-table', 'syllabi_table_shortcode'); 
