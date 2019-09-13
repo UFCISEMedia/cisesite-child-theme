@@ -29,6 +29,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	margin-bottom: 40px;
 }
 
+/*Photo styles*/
+.wp-caption img {
+	margin: 0 auto;
+}
+
+figcaption {
+	text-align: center;
+}
+
 /*Sidenav*/
 .sidenav a {
 	color: #C65006;
@@ -215,6 +224,11 @@ margin: 0;
 	background: transparent;
 }
 
+/*Syllabi Upload Form*/
+.gform_wrapper .syllabi-upload-form ul li:after, .gform_wrapper .syllabi-upload-form ul li:before {
+	display: none;
+}
+
 /*News & Event Pages Styles*/
 #wpsp-5007 .wp-show-posts-entry-summary p {
 	text-align: center;
@@ -294,7 +308,7 @@ margin: 0;
 }
 
 /*Issuu PDF Viewer*/
-.embed-wrapper {
+#post-4789 .embed-wrapper {
 	height: 900px;
 }
 
@@ -329,27 +343,27 @@ bwg_container {
 	color: #c65006;
 }
 
-/*
+
 @media (max-width: 435px) {
-/*Issuu PDF Viewer
-	.embed-wrapper {
+/*Issuu PDF Viewer*/
+	#post-4789 .embed-wrapper {
 		height: 500px;
 	}
 }
 
 @media (max-width: 530px) and (min-width: 436px) {
-/*Issuu PDF Viewer
-	.embed-wrapper {
+/*Issuu PDF Viewer*/
+	#post-4789 .embed-wrapper {
 		height: 700px;
 	}
 }
 
 @media (max-width: 570px) and (min-width: 531px) {
-/*Issuu PDF Viewer
-	.embed-wrapper {
+/*Issuu PDF Viewer*/
+	#post-4789 .embed-wrapper {
 		height: 800px;
 	}
-}*/
+}
 
 @media (max-width: 991px) and (min-width: 980px) {
 /*Homepage*/
