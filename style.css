@@ -111,6 +111,30 @@ figcaption {
 	margin-right: 0;
 }
 
+/*Labs and Conference Rooms Page*/
+
+.ics-calendar-month-grid ul li:before {
+	display: none;
+}
+.ics-calendar .events .time .show_on_hover {
+	display: none;
+}
+.ics-calendar .events .time {
+	cursor: auto;
+}
+.ics-calendar .events {
+  white-space: nowrap;
+	overflow: scroll;
+}
+
+.ics-calendar-month-grid .past {
+	opacity: 0.50;
+}
+
+.ics-calendar-month-grid .events .time, .ics-calendar-month-grid .events .title {
+	display: inline;
+}
+
 /*Faculty Page Styles*/
 /*Removes post meata data*/
 .post-template-single-post-faculty .widget-area, .post-template-single-post-faculty .entry-meta { 
