@@ -81,3 +81,9 @@ function my_mce_before_init_insert_formats( $init_array ) {
 } 
 // Attach callback to 'tiny_mce_before_init' 
 add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );  
+
+//Removes parent theme function to remove p tags on acf wysiwyg
+function child_remove_parent_function() {
+    remove_action('acf/init', 'acf_wysiwyg_remove_wpautop');
+}
+add_action( 'after_setup_theme', 'child_remove_parent_function' );
