@@ -18,6 +18,36 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	margin-right: 20px;
 }*/
 
+/*News Block on Homepage*/
+.secondary-featured-copy h2.wp-show-posts-entry-title {
+	font: 500 20px/26px "gentona","Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform: uppercase;
+}
+
+.secondary-featured-copy .wp-show-posts-inner {
+	margin: 0 0 10px;
+}
+
+.secondary-featured-copy article.wp-show-posts-single {
+	margin-bottom: 0 !important;	
+}
+
+.secondary-featured-copy .wp-show-posts-meta a, .secondary-featured-copy .wp-show-posts-meta a:visited {
+	color: #fff;
+}
+
+.secondary-featured-copy .wp-show-posts-entry-meta {
+	font-size: 16px;
+}
+
+.wp-show-posts .wp-show-posts-entry-title {
+	margin: 0;
+}
+
+.two .secondary-featured-story, .two .tweet-block {
+	height: 430px;
+}
+
 /*Twitter Block on Homepage*/
 .tweet-block {
 	background: #00529b url(https://test.cise.ufl.edu/wp-content/themes/hwcoe-ufl/img/bg-big-stat.png) no-repeat center center !important;
@@ -264,6 +294,50 @@ margin: 0;
 	margin-bottom: 0;
 }
 
+/*News Pages Styles*/
+.wp-show-posts-image.wpsp-image-left {
+	float: left;
+	margin-right: 1.5em;
+}
+
+.wp-show-posts-inner :last-child {
+	margin-bottom: 0;
+}
+
+body .wp-show-posts a {
+	box-shadow: 0 0 0 transparent;
+}
+
+.wp-show-posts-entry-header {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+.wp-show-posts-image, .wp-show-posts-entry-content, .wp-show-posts-entry-summary {
+	margin-bottom: 1em;
+}
+
+.wpsp-image-center .wp-post-image {
+	margin: auto;
+}
+
+	/*WP-Show posts News Page Time Meta*/
+	time.wp-show-posts-updated {
+		display: none;
+	}
+
+	.wp-show-posts-meta a, .wp-show-posts-meta a:visited {
+		color: rgba(0,0,0,.5);
+	}
+
+	.wp-show-posts-entry-meta {
+		font-size: .8em;
+	}
+
+	.wp-show-posts-meta a:hover {
+		color: #E87E3E;
+	}
+
 /*Newsletter Pages Styles*/
 #wpsp-3025 .wp-show-posts-entry-summary p {
 	text-align: center;
@@ -367,44 +441,6 @@ bwg_container {
 	color: #c65006;
 }
 
-
-@media (max-width: 435px) {
-/*Issuu PDF Viewer*/
-	#post-4789 .embed-wrapper {
-		height: 500px;
-	}
-}
-
-@media (max-width: 530px) and (min-width: 436px) {
-/*Issuu PDF Viewer*/
-	#post-4789 .embed-wrapper {
-		height: 700px;
-	}
-}
-
-@media (max-width: 570px) and (min-width: 531px) {
-/*Issuu PDF Viewer*/
-	#post-4789 .embed-wrapper {
-		height: 800px;
-	}
-}
-
-@media (max-width: 991px) and (min-width: 980px) {
-/*Homepage*/
-	.secondary-featured-block {
-		background-image: none;
-	}
-	.homepage-secondary-featured-wrap .secondary-featured-block.three {
-		margin-top: 0px;
-	}
-}
-
-@media (max-width: 992px) and (min-width: 992px) {
-	.secondary-featured-block.three {
-		background-image: none;
-	}
-}
-
 @media (max-width: 1601px) and (min-width: 1522px) {
 /*Navigation Styles*/
 	.header-type-text .header.unit .main-menu-wrap .main-menu-link {
@@ -440,6 +476,12 @@ bwg_container {
 	}
 }
 
+@media (max-width: 1219px) {
+	.two .secondary-featured-story, .two .tweet-block {
+		height: 460px;
+	}
+}
+
 @media (max-width: 1219px) and (min-width: 1105px){
 /*Navigation Styles*/
 	.main-menu-wrap .main-menu-link {
@@ -455,6 +497,29 @@ bwg_container {
 	}
 }
 
+@media (max-width: 991px) {
+	.two .secondary-featured-story, .two .tweet-block {
+		height: 405px;
+	}
+}
+
+@media (max-width: 991px) and (min-width: 980px) {
+/*Homepage*/
+	.secondary-featured-block {
+		background-image: none;
+	}
+	
+	.homepage-secondary-featured-wrap .secondary-featured-block.three {
+		margin-top: 0px;
+	}
+}
+
+@media (max-width: 979px) {
+	.one .secondary-featured-story, .two .secondary-featured-story, .two .tweet-block {
+		height: 550px;
+	}
+}
+
 @media (max-width: 768px) {
 	/*Sidenav*/
 	.btn-mobile-toggle a {
@@ -466,11 +531,22 @@ bwg_container {
 	#syllabi-table_wrapper.dataTables_wrapper .dataTables_info {
 		float: none !important;
 	}
+	
+	.one .secondary-featured-story, .two .secondary-featured-story, .two .tweet-block {
+		height: 400px;
+	}
 }
+
 
 @media (max-width: 594px) {
 	.table-wrapper {
 		overflow-x: scroll;
+	}
+}
+
+@media (max-width: 563px) {
+	.one .secondary-featured-story, .two .secondary-featured-story, .two .tweet-block {
+		height: 440px;
 	}
 }
 
@@ -500,4 +576,25 @@ bwg_container {
 	.nl-faculty-story, .nl-events-story, .nl-students-story, .nl-digital-story {
 		height: auto;
 	}	
+}
+
+@media (max-width: 570px) and (min-width: 531px) {
+/*Issuu PDF Viewer*/
+	#post-4789 .embed-wrapper {
+		height: 800px;
+	}
+}
+
+@media (max-width: 530px) and (min-width: 436px) {
+/*Issuu PDF Viewer*/
+	#post-4789 .embed-wrapper {
+		height: 700px;
+	}
+}
+
+@media (max-width: 435px) {
+/*Issuu PDF Viewer*/
+	#post-4789 .embed-wrapper {
+		height: 500px;
+	}
 }
