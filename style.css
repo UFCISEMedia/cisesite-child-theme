@@ -294,6 +294,27 @@ margin: 0;
 	margin-bottom: 0;
 }
 
+#wpsp_widget-4 {
+	padding-bottom: 40px !important;
+}
+
+#em_widget-3 ul a {
+	font-size: 20px;
+	letter-spacing: .5px;
+}
+
+#em_widget-3 ul li ul {
+	margin-top: 5px;
+}
+
+#text-3 h5, #text-14 h5 {
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 200;
+}
+
 /*News Pages Styles*/
 .wp-show-posts-image.wpsp-image-left {
 	float: left;
@@ -317,8 +338,8 @@ body .wp-show-posts a {
 	margin-bottom: 1em;
 }
 
-.wpsp-image-center .wp-post-image {
-	margin: auto;
+.wpsp-image-center .wp-post-image, .wpsp-image-center img {
+	margin: auto !important;
 }
 
 	/*WP-Show posts News Page Time Meta*/
@@ -337,6 +358,10 @@ body .wp-show-posts a {
 	.wp-show-posts-meta a:hover {
 		color: #E87E3E;
 	}
+
+#post-6685 .embed-wrapper {
+	border: 1px solid #ccc;
+}
 
 /*Newsletter Pages Styles*/
 #wpsp-3025 .wp-show-posts-entry-summary p {
