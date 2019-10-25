@@ -342,6 +342,15 @@ body .wp-show-posts a {
 	margin: auto !important;
 }
 
+/*Faculty Directory Page*/
+#wpsp-1165 .wpsp-image-center .wp-post-image {
+	margin: 0 !important;
+}
+
+#wpsp-1165 .wp-show-posts-entry-header {
+	margin: 0 !important;
+}
+
 	/*WP-Show posts News Page Time Meta*/
 	time.wp-show-posts-updated {
 		display: none;
