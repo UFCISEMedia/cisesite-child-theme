@@ -221,6 +221,11 @@
 			<?php endwhile // the_row ?>
 		<?php endif // have_rows ?>
 	
+		<!--End Content-->		
+		<?php if(get_field('nl_end_content')){ //if the field is not empty
+				echo '<hr />' . get_field('nl_end_content'); //display it
+				} 
+		?>		
 	</div><!--End Stories-->
 	
 	

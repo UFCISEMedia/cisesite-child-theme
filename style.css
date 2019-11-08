@@ -345,6 +345,7 @@ body .wp-show-posts a {
 /*Faculty Directory Page*/
 #wpsp-1165 .wpsp-image-center .wp-post-image {
 	margin: 0 !important;
+	width: 150px;	
 }
 
 #wpsp-1165 .wp-show-posts-entry-header {
