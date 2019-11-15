@@ -15,9 +15,6 @@ function hwcoe_ufl_child_scripts() {
 		wp_get_theme('hwcoe-ufl')->get('Version')
 	);
 	
-	//DataTables Styles
-	wp_enqueue_style( 'datatables', get_stylesheet_directory_uri() . '/css/datatables.min.css' );
-	
 	//Child Theme Styles
 	wp_enqueue_style( 'hwcoe-ufl-child-style',
 		get_stylesheet_directory_uri() . '/style.css',
@@ -25,10 +22,7 @@ function hwcoe_ufl_child_scripts() {
 		get_theme_version() 
 	);
 
-    wp_enqueue_script('hwcoe-ufl-child-scripts', get_stylesheet_directory_uri() . '/scripts.js', array(), get_theme_version(), true);
-
-	//DataTables Scripts	
-	wp_enqueue_script( 'datatables', get_stylesheet_directory_uri() . '/js/datatables.min.js', null, null, true );
+    //wp_enqueue_script('hwcoe-ufl-child-scripts', get_stylesheet_directory_uri() . '/scripts.js', array(), get_theme_version(), true);
 	
 }
 add_action( 'wp_enqueue_scripts', 'hwcoe_ufl_child_scripts' );

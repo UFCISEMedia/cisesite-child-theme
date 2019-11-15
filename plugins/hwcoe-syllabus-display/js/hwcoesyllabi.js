@@ -1,5 +1,5 @@
 /*!
- * HWCOE UFL Child Theme scripts
+ * HWCOE SYLLABI DISPLAY scripts
  */
 
 jQuery(function($) {
