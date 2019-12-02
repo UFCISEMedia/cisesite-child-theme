@@ -45,7 +45,11 @@
 							<a href="<?php esc_url( the_sub_field( 'story_link' ) ); ?>" aria-label="'<?php the_sub_field( 'story_title' ) ?>'" class="read-more">Read More</a>
 						<?php }?>
 				</div>
-				<a href="<?php echo get_category_link( get_sub_field( 'story_category' ) ); ?>" class="category-tag"><?php echo get_cat_name( get_sub_field( 'story_category' ) ); ?></a>
+				<?php if( get_sub_field( 'category_story_link' ) ): ?>
+					<a href="<?php esc_url( the_sub_field( 'story_link' ) ); ?>" class="category-tag"><?php echo get_cat_name( get_sub_field( 'story_category' ) ); ?></a>
+				<?php else: ?>
+					<a href="<?php echo get_category_link( get_sub_field( 'story_category' ) ); ?>" class="category-tag"><?php echo get_cat_name( get_sub_field( 'story_category' ) ); ?></a>
+				<?php endif // pull_latest_from_category ?>
 			</div>
 		<?php endif // pull_latest_from_category ?>
 	</div> <!-- secondary-featured-block one in-right -->
