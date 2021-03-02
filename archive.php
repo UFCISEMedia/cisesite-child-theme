@@ -21,7 +21,10 @@ get_header(); ?>
   <div class="col-md-9">
     <?php 
 	  global $wp_query;
-	  $args = array_merge( $wp_query->query, array( 'cat' => '-67,-215' ) );
+	  $researchareaID = get_cat_ID( 'research-areas-pg' );
+	  $facultyID = get_cat_ID( 'faculty-pg' );
+	  $speakerID = get_cat_ID( 'speaker' );
+	  $args = array_merge( $wp_query->query, array( 'category__not_in' => array($facultyID, $speakerID, $researchareaID) ) ); //displays all categories except the faculty-pg, speaker and research-areas-pg categories
 	  query_posts( $args );
 
 		while ( have_posts() ) : the_post();
