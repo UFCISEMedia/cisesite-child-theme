@@ -55,7 +55,7 @@
 				<?php
 					$imageArray  = get_sub_field( 'image' );
 					$imageAlt    = esc_attr($imageArray['alt']);
-					$image       = esc_url($imageArray['sizes']['large']);
+					$image       = esc_url($imageArray['sizes']['nl_feature_img']);
 				?>
 				<div class="nl-featured-story">
 					<img src="<?php echo $image; ?>" alt="<?php echo $imageAlt; ?>" class="nl-featured-st-img">
@@ -75,7 +75,7 @@
 				<div class="nl-department-story">
 					<h3><?php esc_attr( the_sub_field( 'title' ) ); ?></h3>
 					<p><?php esc_attr( the_sub_field( 'excerpt' ) ); ?>
-					<a href="<?php esc_url( the_sub_field( 'link' ) ); ?>" target="_blank">... Read more >></a></p>
+					<a href="<?php esc_url( the_sub_field( 'link' ) ); ?>" target="_blank">... Read more >>></a></p>
 				</div>
 			<?php endwhile // the_row ?>
 		<?php endif // have_rows ?>
@@ -87,7 +87,7 @@
 				<div class="nl-news-story">
 					<h3><?php esc_attr( the_sub_field( 'title' ) ); ?></h3>
 					<p><?php esc_attr( the_sub_field( 'excerpt' ) ); ?>
-					<a href="<?php esc_url( the_sub_field( 'link' ) ); ?>" target="_blank">... Read more >></a></p>
+					<a href="<?php esc_url( the_sub_field( 'link' ) ); ?>" target="_blank">... Read more >>></a></p>
 				</div>
 			<?php endwhile // the_row ?>
 		<?php endif // have_rows ?>
@@ -99,7 +99,7 @@
 				<?php
 					$imageArray  = get_sub_field( 'image' );
 					$imageAlt    = esc_attr($imageArray['alt']);
-					$image       = esc_url($imageArray['sizes']['thumbnail']);
+					$image       = esc_url($imageArray['sizes']['nl_images']);
 				?>
 				<div class="nl-faculty-story">
 					<?php if(get_sub_field('image')){ //if the field is not empty
@@ -112,7 +112,7 @@
 					echo '<p>' . get_sub_field('excerpt'); //display it
 					} ?>
 					<?php if(get_sub_field('link')){ //if the field is not empty
-					echo '<a href="' . get_sub_field('link') . '" target="_blank">... Read more >></a></p>'; //display it
+					echo '<a href="' . get_sub_field('link') . '" target="_blank">... Read more >>></a></p>'; //display it
 					} ?>	
 				</div>
 			<?php endwhile // the_row ?>
@@ -125,7 +125,7 @@
 				<?php
 					$imageArray  = get_sub_field( 'image' );
 					$imageAlt    = esc_attr($imageArray['alt']);
-					$image       = esc_url($imageArray['sizes']['thumbnail']);
+					$image       = esc_url($imageArray['sizes']['nl_images']);
 				?>
 				<div class="nl-events-story">
 					<?php if(get_sub_field('image')){ //if the field is not empty
@@ -138,7 +138,7 @@
 					echo '<p>' . get_sub_field('excerpt'); //display it
 					} ?>
 					<?php if(get_sub_field('link')){ //if the field is not empty
-					echo '<a href="' . get_sub_field('link') . '" target="_blank">... Read more >></a></p>'; //display it
+					echo '<a href="' . get_sub_field('link') . '" target="_blank">... Read more >>></a></p>'; //display it
 					} ?>	
 				</div>
 			<?php endwhile // the_row ?>
@@ -151,7 +151,7 @@
 				<?php
 					$imageArray  = get_sub_field( 'image' );
 					$imageAlt    = esc_attr($imageArray['alt']);
-					$image       = esc_url($imageArray['sizes']['thumbnail']);
+					$image       = esc_url($imageArray['sizes']['nl_images']);
 				?>
 				<div class="nl-students-story">
 					<?php if(get_sub_field('image')){ //if the field is not empty
@@ -164,7 +164,7 @@
 					echo '<p>' . get_sub_field('excerpt'); //display it
 					} ?>
 					<?php if(get_sub_field('link')){ //if the field is not empty
-					echo '<a href="' . get_sub_field('link') . '" target="_blank">... Read more >></a></p>'; //display it
+					echo '<a href="' . get_sub_field('link') . '" target="_blank">... Read more >>></a></p>'; //display it
 					} ?>	
 				</div>
 			<?php endwhile // the_row ?>
@@ -177,7 +177,7 @@
 				<?php
 					$imageArray  = get_sub_field( 'image' );
 					$imageAlt    = esc_attr($imageArray['alt']);
-					$image       = esc_url($imageArray['sizes']['thumbnail']);
+					$image       = esc_url($imageArray['sizes']['nl_images']);
 				?>
 				<div class="nl-students-story">
 					<?php if(get_sub_field('image')){ //if the field is not empty
@@ -190,7 +190,7 @@
 					echo '<p>' . get_sub_field('excerpt'); //display it
 					} ?>
 					<?php if(get_sub_field('link')){ //if the field is not empty
-					echo '<a href="' . get_sub_field('link') . '" target="_blank">... Read more >></a></p>'; //display it
+					echo '<a href="' . get_sub_field('link') . '" target="_blank">... Read more >>></a></p>'; //display it
 					} ?>	
 				</div>
 			<?php endwhile // the_row ?>
@@ -200,23 +200,26 @@
 		<?php if( have_rows( 'nl_pg_digital' ) ): ?>
 			<?php while( have_rows( 'nl_pg_digital' ) ): the_row(); ?>
 				<?php
-					$imageArray  = get_sub_field( 'nl_pg_digital_image' );
+					$imageArray  = get_sub_field( 'image' );
 					$imageAlt    = esc_attr($imageArray['alt']);
-					$image       = esc_url($imageArray['sizes']['thumbnail']);
+					$image       = esc_url($imageArray['sizes']['digital_nl_images']);
 				?>
 				<div class="nl-digital-story">
-					<?php if(get_sub_field('nl_pg_digital_image')){ //if the field is not empty
+					<?php if(get_sub_field('image')){ //if the field is not empty
 					echo '<img src="' . $image . '" alt="' . $imageAlt . '">'; //display it
 					} ?>
-					<?php if(get_sub_field('nl_pg_digital_title')){ //if the field is not empty
-					echo '<h3>' . get_sub_field('nl_pg_digital_title') . '</h3>'; //display it
+					<?php if(get_sub_field('title')){ //if the field is not empty
+					echo '<h3>' . get_sub_field('title') . '</h3>'; //display it
 					} ?>
-					<?php if(get_sub_field('nl_pg_digital_excerpt')){ //if the field is not empty
-					echo '<p>' . get_sub_field('nl_pg_digital_excerpt') . '</p>'; //display it
+					<?php if(get_sub_field('excerpt')){ //if the field is not empty
+					echo '<p>' . get_sub_field('excerpt') . '</p>'; //display it
 					} ?>
-					<?php if(get_sub_field('nl_pg_digital_story_link')){ //if the field is not empty
-					echo '<p><a href="' . get_sub_field('nl_pg_digital_story_link') . '" target="_blank">Read more >>></a></p>'; //display it
-					} ?>	
+					<?php if(get_sub_field('link')){ //if the field is not empty
+					echo '<p><a href="' . get_sub_field('link') . '" target="_blank">Read more >>></a></p>'; //display it
+					} ?>
+					<?php if(get_sub_field('external_link')){ //if the field is not empty
+					echo '<p><a href="' . get_sub_field('external_link') . '" target="_blank">Read more >>></a></p>'; //display it
+					} ?>					
 				</div>
 			<?php endwhile // the_row ?>
 		<?php endif // have_rows ?>
