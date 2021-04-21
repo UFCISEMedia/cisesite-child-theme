@@ -45,10 +45,14 @@ if ( !function_exists( 'hwcoe_ufl_child_icon_url' ) ) {
 define( "HWCOE_UFL_CHILD_INC_DIR", get_stylesheet_directory() . "/inc/modules" );
 
 /**
- * Load custom theme files for custom image sizes 
+ * Load custom theme files for 
+ * Custom Image Sizes 
+ * Shortcodes
  */
 
 require get_stylesheet_directory() . '/inc/media.php';
+
+require get_stylesheet_directory() . '/inc/childshortcodes.php';
 
 /*
 * Visual Editor Styles
