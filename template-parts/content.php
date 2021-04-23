@@ -39,16 +39,13 @@
 				the_content();?>
 		
 			<?php 
-			$byline = get_field('byline');
-			if( $byline): ?>
-				<p>__________</p>
-				<p><em>
-					By <?php echo $byline ['name'];?><br>
-					<?php echo $byline ['title'];?><br>
-					<?php echo $byline ['unit'];?>
-				</em></p>
-				<hr>
-			<?php endif; ?>	
+			$byline = get_field( 'post_byline' );
+		
+			if( $byline) { 
+				echo '<hr style="width: 20%;margin: 30px 0; border-bottom: 1px solid #000;"><p><em>' . $byline . '</em></p><hr>';
+			} else {
+					echo '';
+					} ?>
 		<?php
 			else: 
 		?>
