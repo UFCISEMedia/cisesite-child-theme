@@ -5,7 +5,7 @@ Description: Child theme for UF HWCOE
 Author: HWCOE MARCOM
 Author URI: https://www.eng.ufl.edu/
 Template: hwcoe-ufl
-Version: 1.0.0-beta
+Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -187,6 +187,10 @@ figcaption {
 }
 .faculty_details ul li, .faculty_details ol li { 
 	text-transform: none;
+}
+
+.faculty-news-links .wp-show-posts:not(.wp-show-posts-columns) .wp-show-posts-single:not(:last-child) {
+	margin-bottom: .5em;
 }
 
 /*Faculty Contact Information Styles*/
@@ -469,6 +473,23 @@ bwg_container {
 
 #bwg_container1_0 #bwg_container2_0 .bwg_slideshow_dots_container_0 {
 	bottom: -30px !important;
+}
+
+/*Contact Card Shortcode*/
+.contact-card {
+	background: #fffdf5;
+	padding: 30px 40px;	
+	min-height: 400px;
+	margin-bottom: 20px;
+}
+
+.contact-card-img {
+	padding: 0 20px 0 0;
+}
+
+.contact-card img {
+	width: 100%;
+	max-width: 260px;
 }
 
 /*Footer*/

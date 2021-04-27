@@ -20,8 +20,9 @@ function hwcoe_ufl_contact_card($atts, $content = NULL ) {
 	
 	extract( shortcode_atts( 
 		array(
-			'name' => '',
+			'title' => '',
 			'image' => '',
+			'height' => '',
 		), $atts )
 	);
 	 
@@ -31,17 +32,31 @@ function hwcoe_ufl_contact_card($atts, $content = NULL ) {
 	// Shortcode callbacks must return content, so use output buffering
 	ob_start();
 	?>
-		<div class="contact-card">
-			<div class="col-md-5 contact-card-img">
-				<img src="<?php echo esc_url( $image[0] ); ?>" alt="" width="262px">
+		<?php if (!empty( $height )){ ?>
+			<div class="contact-card" style="min-height:<?php echo esc_html( $height ); ?>;">
+				<div class="col-md-5 contact-card-img">
+					<img src="<?php echo esc_url( $image[0] ); ?>" alt="" width="262px">
+				</div>
+				<div class="col-md-7 contact-card-text">
+				  	<?php if (!empty( $title )){ ?>
+						<h2><?php echo esc_html( $title ); ?></h2>
+					<?php } ?>
+					<?php echo wpautop( wp_kses_post( $content ) ); ?>
+				</div>
 			</div>
-			<div class="col-md-7 contact-card-text">
-					  <?php if (!empty( $name )){ ?>
-						<h2><?php echo esc_html( $name ); ?></h2>
-				<?php } ?>
-				<?php echo wpautop( wp_kses_post( $content ) ); ?>
+		<?php } else { ?>
+			<div class="contact-card">
+				<div class="col-md-5 contact-card-img">
+					<img src="<?php echo esc_url( $image[0] ); ?>" alt="" width="262px">
+				</div>
+				<div class="col-md-7 contact-card-text">
+				  	<?php if (!empty( $title )){ ?>
+						<h2><?php echo esc_html( $title ); ?></h2>
+					<?php } ?>
+					<?php echo wpautop( wp_kses_post( $content ) ); ?>
+				</div>
 			</div>
-		</div>
+		<?php } ?>
 
 	 <?php 
 	return ob_get_clean();
