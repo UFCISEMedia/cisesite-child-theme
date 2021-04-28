@@ -475,19 +475,31 @@ bwg_container {
 	bottom: -30px !important;
 }
 
-/*Contact Card Shortcode*/
-.contact-card {
+/*Shortcode Styles
+Image Card Left, Image Card Right, and Text Card*/
+.image-card-left, .image-card-right {
 	background: #fffdf5;
 	padding: 30px 40px;	
 	min-height: 400px;
 	margin-bottom: 20px;
 }
 
-.contact-card-img {
+.text-card {
+	background: #fffdf5;
+	padding: 30px 40px;	
+	height: 300px;
+	margin-bottom: 20px;
+}
+
+.image-card-left-img {
 	padding: 0 20px 0 0;
 }
 
-.contact-card img {
+.image-card-right-img {
+	padding: 0 0 0 20px;
+}
+
+.image-card-left img, .image-card-right img {
 	width: 100%;
 	max-width: 260px;
 }
