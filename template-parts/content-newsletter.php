@@ -59,9 +59,12 @@
 				?>
 				<div class="nl-featured-story">
 					<img src="<?php echo $image; ?>" alt="<?php echo $imageAlt; ?>" class="nl-featured-st-img">
-					<?php if ( get_sub_field( 'title') ): ?>
-						<h3><a href="<?php esc_url( the_sub_field( 'link' ) ); ?>" target="_blank"><?php esc_attr( the_sub_field( 'title' ) ); ?></a></h3>
-					<?php endif ?>
+					<?php if(get_sub_field('internal_link')){ //if the field is not empty
+					echo '<h3><a href="' . get_sub_field('internal_link') . '" target="_blank">' . get_sub_field('title') . '</a></h3>'; //display it
+					} ?>
+					<?php if(get_sub_field('external_link')){ //if the field is not empty
+					echo '<h3><a href="' . get_sub_field('external_link') . '" target="_blank">' . get_sub_field('title') . '</a></h3>'; //display it
+					} ?>		
 				</div>
 			<?php endwhile // the_row ?>
 		<?php endif // have_rows ?>
@@ -75,7 +78,12 @@
 				<div class="nl-department-story">
 					<h3><?php esc_attr( the_sub_field( 'title' ) ); ?></h3>
 					<p><?php esc_attr( the_sub_field( 'excerpt' ) ); ?>
-					<a href="<?php esc_url( the_sub_field( 'link' ) ); ?>" target="_blank">... Read more >>></a></p>
+					<?php if(get_sub_field('internal_link')){ //if the field is not empty
+					echo '<a href="' . get_sub_field('internal_link') . '" target="_blank">Read full story >>></a></p>'; //display it
+					} ?>
+					<?php if(get_sub_field('external_link')){ //if the field is not empty
+					echo '<a href="' . get_sub_field('external_link') . '" target="_blank">Read full story >>></a></p>'; //display it
+					} ?>						
 				</div>
 			<?php endwhile // the_row ?>
 		<?php endif // have_rows ?>
@@ -91,9 +99,9 @@
 				</div>
 			<?php endwhile // the_row ?>
 		<?php endif // have_rows ?>
-		
-		<!--Faculty Stories-->
-		<?php if( have_rows( 'nl_pg_faculty' ) ): ?>
+
+		 <!--Faculty Stories-->
+		 <?php if( have_rows( 'nl_pg_faculty' ) ): ?>
 			<h2>Faculty</h2>
 			<?php while( have_rows( 'nl_pg_faculty' ) ): the_row(); ?>
 				<?php
@@ -109,15 +117,18 @@
 					echo '<h3>' . get_sub_field('title') . '</h3>'; //display it
 					} ?>
 					<?php if(get_sub_field('excerpt')){ //if the field is not empty
-					echo '<p>' . get_sub_field('excerpt'); //display it
+					echo '<p>' . get_sub_field('excerpt') . '</p>'; //display it
 					} ?>
-					<?php if(get_sub_field('link')){ //if the field is not empty
-					echo '<a href="' . get_sub_field('link') . '" target="_blank">... Read more >>></a></p>'; //display it
-					} ?>	
+					<?php if(get_sub_field('internal_link')){ //if the field is not empty
+					echo '<p><a href="' . get_sub_field('internal_link') . '" target="_blank">Read full story >>></a></p>'; //display it
+					} ?>
+					<?php if(get_sub_field('external_link')){ //if the field is not empty
+					echo '<p><a href="' . get_sub_field('external_link') . '" target="_blank">Read full story >>></a></p>'; //display it
+					} ?>			
 				</div>
 			<?php endwhile // the_row ?>
 		<?php endif // have_rows ?>
-		
+
 		<!--Event Stories-->
 		<?php if( have_rows( 'nl_pg_events' ) ): ?>
 			<h2>Events</h2>
@@ -135,15 +146,18 @@
 					echo '<h3>' . get_sub_field('title') . '</h3>'; //display it
 					} ?>
 					<?php if(get_sub_field('excerpt')){ //if the field is not empty
-					echo '<p>' . get_sub_field('excerpt'); //display it
+					echo '<p>' . get_sub_field('excerpt') . '</p>'; //display it
 					} ?>
-					<?php if(get_sub_field('link')){ //if the field is not empty
-					echo '<a href="' . get_sub_field('link') . '" target="_blank">... Read more >>></a></p>'; //display it
-					} ?>	
+					<?php if(get_sub_field('internal_link')){ //if the field is not empty
+					echo '<p><a href="' . get_sub_field('internal_link') . '" target="_blank">Read full story >>></a></p>'; //display it
+					} ?>
+					<?php if(get_sub_field('external_link')){ //if the field is not empty
+					echo '<p><a href="' . get_sub_field('external_link') . '" target="_blank">Read full story >>></a></p>'; //display it
+					} ?>		
 				</div>
 			<?php endwhile // the_row ?>
 		<?php endif // have_rows ?>
-		
+
 		<!--Student Stories-->
 		<?php if( have_rows( 'nl_pg_students' ) ): ?>
 			<h2>Students</h2>
@@ -161,15 +175,18 @@
 					echo '<h3>' . get_sub_field('title') . '</h3>'; //display it
 					} ?>
 					<?php if(get_sub_field('excerpt')){ //if the field is not empty
-					echo '<p>' . get_sub_field('excerpt'); //display it
+					echo '<p>' . get_sub_field('excerpt') . '</p>'; //display it
 					} ?>
-					<?php if(get_sub_field('link')){ //if the field is not empty
-					echo '<a href="' . get_sub_field('link') . '" target="_blank">... Read more >>></a></p>'; //display it
+					<?php if(get_sub_field('internal_link')){ //if the field is not empty
+					echo '<p><a href="' . get_sub_field('internal_link') . '" target="_blank">Read full story >>></a></p>'; //display it
+					} ?>
+					<?php if(get_sub_field('external_link')){ //if the field is not empty
+					echo '<p><a href="' . get_sub_field('external_link') . '" target="_blank">Read full story >>></a></p>'; //display it
 					} ?>	
 				</div>
 			<?php endwhile // the_row ?>
 		<?php endif // have_rows ?>
-		
+
 		<!--Alumni Stories-->
 		<?php if( have_rows( 'nl_pg_alumni' ) ): ?>
 			<h2>Alumni</h2>
@@ -187,15 +204,18 @@
 					echo '<h3>' . get_sub_field('title') . '</h3>'; //display it
 					} ?>
 					<?php if(get_sub_field('excerpt')){ //if the field is not empty
-					echo '<p>' . get_sub_field('excerpt'); //display it
+					echo '<p>' . get_sub_field('excerpt') . '</p>'; //display it
 					} ?>
-					<?php if(get_sub_field('link')){ //if the field is not empty
-					echo '<a href="' . get_sub_field('link') . '" target="_blank">... Read more >>></a></p>'; //display it
+					<?php if(get_sub_field('internal_link')){ //if the field is not empty
+					echo '<p><a href="' . get_sub_field('internal_link') . '" target="_blank">Read full story >>></a></p>'; //display it
+					} ?>
+					<?php if(get_sub_field('external_link')){ //if the field is not empty
+					echo '<p><a href="' . get_sub_field('external_link') . '" target="_blank">Read full story >>></a></p>'; //display it
 					} ?>	
 				</div>
 			<?php endwhile // the_row ?>
 		<?php endif // have_rows ?>
-
+		
 		<!--Digital Newsletter Stories-->
 		<?php if( have_rows( 'nl_pg_digital' ) ): ?>
 			<?php while( have_rows( 'nl_pg_digital' ) ): the_row(); ?>
@@ -214,21 +234,21 @@
 					<?php if(get_sub_field('excerpt')){ //if the field is not empty
 					echo '<p>' . get_sub_field('excerpt') . '</p>'; //display it
 					} ?>
-					<?php if(get_sub_field('link')){ //if the field is not empty
-					echo '<p><a href="' . get_sub_field('link') . '" target="_blank">Read more >>></a></p>'; //display it
+					<?php if(get_sub_field('internal_link')){ //if the field is not empty
+					echo '<p><a href="' . get_sub_field('internal_link') . '" target="_blank">Read full story >>></a></p>'; //display it
 					} ?>
 					<?php if(get_sub_field('external_link')){ //if the field is not empty
-					echo '<p><a href="' . get_sub_field('external_link') . '" target="_blank">Read more >>></a></p>'; //display it
-					} ?>					
+					echo '<p><a href="' . get_sub_field('external_link') . '" target="_blank">Read full story >>></a></p>'; //display it
+					} ?>	
 				</div>
 			<?php endwhile // the_row ?>
 		<?php endif // have_rows ?>
 	
 		<!--End Content-->		
 		<?php if(get_field('nl_end_content')){ //if the field is not empty
-				echo '<hr />' . get_field('nl_end_content'); //display it
+				echo '<div class="nl-end-content"><hr />' . get_field('nl_end_content') . '</div>'; //display it
 				} 
-		?>		
+		?>
 	</div><!--End Stories-->
 	
 	
