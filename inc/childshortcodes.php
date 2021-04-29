@@ -24,6 +24,7 @@ function hwcoe_ufl_image_card_left($atts, $content = NULL ) {
 		array(
 			'title' => '',
 			'image' => '',
+			'alt' => '',
 			'height' => '',
 		), $atts )
 	);
@@ -36,7 +37,7 @@ function hwcoe_ufl_image_card_left($atts, $content = NULL ) {
 	?>
 		<div class="image-card-left" style="min-height:<?php echo esc_html( $height ); ?>;">
 			<div class="col-md-5 image-card-left-img">
-				<img src="<?php echo esc_url( $image[0] ); ?>" alt="" width="262px">
+				<img src="<?php echo esc_url( $image[0] ); ?>" alt="<?php echo esc_html( $alt ); ?>" width="262px">
 			</div>
 			<div class="col-md-7 image-card-left-text">
 				<?php if (!empty( $title )){ ?>
@@ -66,6 +67,7 @@ function hwcoe_ufl_image_card_right($atts, $content = NULL ) {
 		array(
 			'title' => '',
 			'image' => '',
+			'alt' => '',
 			'height' => '',
 		), $atts )
 	);
@@ -84,7 +86,7 @@ function hwcoe_ufl_image_card_right($atts, $content = NULL ) {
 				<?php echo wpautop( wp_kses_post( $content ) ); ?>
 			</div>
 			<div class="col-md-5 image-card-right-img">
-				<img src="<?php echo esc_url( $image[0] ); ?>" alt="" width="262px">
+				<img src="<?php echo esc_url( $image[0] ); ?>" alt="<?php echo esc_html( $alt ); ?>" width="262px">
 			</div>
 		</div>
 
