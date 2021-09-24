@@ -182,13 +182,18 @@ figcaption {
 	margin: 0;
 	font-size: 22px;
 }
-.faculty_details ul li::before { 
+/*.faculty_details ul li::before { 
 	display: none;
-}
+}*/
 .faculty_details ul li, .faculty_details ol li { 
 	text-transform: none;
 }
-
+span.faculty-pg-awards ul {
+	margin: 0;
+}
+span.faculty-pg-awards ul li {
+	margin-bottom: 3px;
+}
 .faculty-news-links .wp-show-posts:not(.wp-show-posts-columns) .wp-show-posts-single:not(:last-child) {
 	margin-bottom: .5em;
 }
