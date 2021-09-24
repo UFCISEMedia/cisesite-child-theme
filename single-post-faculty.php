@@ -68,6 +68,10 @@ get_header(); ?>
 					if(get_field('faculty_awards')){ //if the field is not empty
 						echo '<h3>Awards &amp; Distinctions</h3>' . get_field('faculty_awards'); //display it
 					} 
+			  
+					if(get_field('faculty_news')){ //if the field is not empty
+						echo '<h3>News</h3><span class="faculty-news-links">' . get_field('faculty_news') . '</span>'; //display it
+					} 			  
 				?>
 		  </div>
 	  </div>
