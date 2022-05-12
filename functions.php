@@ -22,8 +22,11 @@ function hwcoe_ufl_child_scripts() {
 		get_theme_version() 
 	);
 
-    //wp_enqueue_script('hwcoe-ufl-child-scripts', get_stylesheet_directory_uri() . '/scripts.js', array(), get_theme_version(), true);
-	
+	wp_enqueue_script('hwcoe-ufl-child-scripts', 
+		  get_stylesheet_directory_uri() . '/js/scripts.js', 
+		  array(), 
+		  get_theme_version(), 
+	  true);	
 }
 add_action( 'wp_enqueue_scripts', 'hwcoe_ufl_child_scripts' );
 

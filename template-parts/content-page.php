@@ -40,6 +40,15 @@
 				<?php if( get_row_layout() == 'shaded_block_text' ): ?>
 					<?php include( HWCOE_UFL_CHILD_INC_DIR . '/ufl-df-block-content.php' ); ?>
 				<?php endif // shaded_block_text ?>
+				<?php
+				/*
+				   * Accordion Style Content
+				   * Content placed into an accordion
+				   */
+				  ?>
+				<?php if( get_row_layout() == 'accordion_style_content' ): ?>
+					<?php include( HWCOE_UFL_CHILD_INC_DIR . '/ufl-df-accordion.php' ); ?>
+				<?php endif // hwcoe_accordion_content ?>		
  			<?php endwhile // the_row ?>
 		<?php endif // have_rows ?>
 	</div><!-- .entry-content -->

@@ -126,6 +126,54 @@ figcaption {
 	text-transform: none;
 }
 
+/*Accordion Styles*/
+
+.accordion_block {
+	margin-bottom: 15px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion_style_content {
+	margin-bottom: 5px;
+}
+
+.accordion_style{
+	font-family: "gentona","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 19px;
+	font-weight: 400;
+	background-color: #3e7198 ;
+	color: #fff;
+	cursor: pointer;
+	padding: 18px 13px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion_style:hover {
+	background-color: #084b81;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.ac_panel {
+	padding: 0 18px;
+	background-color: #3e7198;
+	color: #fff;
+	display: none;
+	overflow: hidden;
+}
+
+.ac_panel a {
+	color: #a9dcda !important;
+}
+
+.ac_panel h4, .ac_panel h5 {
+	color: #a9dcda;
+}
+
 /*Academics Pages - Undergrad/Graduate*/
 .df-image-cards-container {
 }
@@ -528,24 +576,24 @@ Image Card Left, Image Card Right, and Text Card*/
 	}
 }
 
-@media (max-width: 1441px) and (min-width: 1362px) {
+@media (max-width: 1441px) and (min-width: 1366px) {
 /*Navigation Styles*/
 	.header-type-text .header.unit .main-menu-wrap .main-menu-link {
 		padding: 12px 30px;
 	}
 }
 
-@media (max-width: 1361px) and (min-width: 1282px) {
+@media (max-width: 1365px) and (min-width: 1282px) {
 /*Navigation Styles*/
 	.header-type-text .header.unit .main-menu-wrap .main-menu-link {
-		padding: 12px 25px;
+		padding: 37px 25px;
 	}
 }
 
 @media (max-width: 1281px) and (min-width: 1220px){
 /*Navigation Styles*/
 	.header-type-text .header.unit .main-menu-wrap .main-menu-link {
-		padding: 12px 20px;
+		padding: 37px 20px;
 	}
 }
 
