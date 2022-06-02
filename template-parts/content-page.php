@@ -48,7 +48,16 @@
 				  ?>
 				<?php if( get_row_layout() == 'accordion_style_content' ): ?>
 					<?php include( HWCOE_UFL_CHILD_INC_DIR . '/ufl-df-accordion.php' ); ?>
-				<?php endif // hwcoe_accordion_content ?>		
+				<?php endif // hwcoe_accordion_content ?>
+				<?php
+				/*
+				   * Flex Box Content
+				   * Content placed into a flexible div
+				   */
+				  ?>
+				<?php if( get_row_layout() == 'flex_box_content' ): ?>
+					<?php include( HWCOE_UFL_CHILD_INC_DIR . '/ufl-df-flexbox.php' ); ?>
+				<?php endif // flex_box_content ?>		
  			<?php endwhile // the_row ?>
 		<?php endif // have_rows ?>
 	</div><!-- .entry-content -->
